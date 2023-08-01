@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -20,14 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hangfire.Mediator\Hangfire.Mediator.csproj" />
-    <ProjectReference Include="..\Sales.Contracts\Sales.Contracts.csproj" />
-    <ProjectReference Include="..\Shipping.Contracts\Shipping.Contracts.csproj" />
-    <ProjectReference Include="..\Finance.Contracts\Finance.Contracts.csproj" />
+	<ProjectReference Include="..\Hangfire.Mediator\Hangfire.Mediator.csproj" />
+	<ProjectReference Include="..\Sales.Contracts\Sales.Contracts.csproj" />
+	<ProjectReference Include="..\Shipping.Contracts\Shipping.Contracts.csproj" />
+	<ProjectReference Include="..\Finance.Contracts\Finance.Contracts.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Orders\Queries\" />
-  </ItemGroup>
-
 </Project>
