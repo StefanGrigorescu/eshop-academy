@@ -14,9 +14,9 @@ namespace Finance.Identity
         public virtual ICollection<FinanceUserRole> UserRoles { get; set; }
     }
 
-    public sealed class FinanceUserConfig : IEntityTypeConfiguration<SalesUser>
+    public sealed class FinanceUserConfig : IEntityTypeConfiguration<FinanceUser>
     {
-        public void Configure(EntityTypeBuilder<SalesUser> builder)
+        public void Configure(EntityTypeBuilder<FinanceUser> builder)
         {
             builder.HasMany(user => user.UserRoles)
                 .WithOne(userRole => userRole.User)

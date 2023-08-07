@@ -12,7 +12,7 @@ namespace Finance.Utils
         DateTime Now();
     }
 
-    public sealed class DateTimeFactory
+    public sealed class DateTimeFactory : IDateTimeFactory
     {
         public DateTime UtcNow() => DateTime.UtcNow;
         public DateTime Now() => DateTime.Now;
